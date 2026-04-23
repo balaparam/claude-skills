@@ -201,7 +201,7 @@
       "category": "finance"
     },
     {
-      "name": "pw",
+      "name": "playwright-pro",
       "source": "./engineering-team/playwright-pro",
       "description": "Production-grade Playwright testing toolkit. 9 skills, 3 agents, 55 templates, TestRail + BrowserStack MCP integrations. Generate tests, fix flaky failures, migrate from Cypress/Selenium.",
       "version": "2.1.2",
