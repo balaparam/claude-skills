@@ -6,6 +6,14 @@
 
 ## 🎯 Essential Commands
 
+### Marketplace & Plugins
+
+```
+/plugin marketplace add <source>        → Register a skill marketplace
+/plugin install <plugin>@<marketplace>  → Install a skill package
+/plugin list                            → List installed plugins
+```
+
 ### Git Workflow
 
 ```
@@ -22,6 +30,53 @@
 /security-scan  → Run security validation
 /update-docs    → Post-creation sync (CLI platforms, marketplace, docs, GitHub Pages)
 ```
+
+---
+
+## 📦 Plugin Commands
+
+### /plugin - Marketplace Plugin Manager
+
+**Purpose**: Add skill marketplaces and install skill packages into any Claude Code project
+
+**Usage**:
+```
+/plugin marketplace add alirezarezvani/claude-skills
+
+/plugin install engineering-skills@claude-code-skills
+/plugin install playwright-pro@claude-code-skills
+/plugin install content-creator@claude-code-skills
+/plugin list
+```
+
+**Operations**:
+
+| Subcommand | Example | What it does |
+|------------|---------|--------------|
+| `marketplace add <source>` | `/plugin marketplace add alirezarezvani/claude-skills` | Fetches marketplace manifest, lists available plugins, registers source in `.claude/settings.json` |
+| `install <plugin>@<marketplace>` | `/plugin install playwright-pro@claude-code-skills` | Downloads skill to `.claude-skills/<name>/`, records in settings |
+| `list` | `/plugin list` | Shows installed plugins with version and source |
+
+**Available marketplaces**:
+- `alirezarezvani/claude-skills` → marketplace name `claude-code-skills`
+
+**Available plugins** (via `claude-code-skills`):
+
+| Install command | Contents |
+|----------------|----------|
+| `engineering-skills@claude-code-skills` | 23 core engineering skills |
+| `engineering-advanced-skills@claude-code-skills` | 25 POWERFUL-tier skills |
+| `product-skills@claude-code-skills` | 8 product skills |
+| `marketing-skills@claude-code-skills` | 43 marketing skills |
+| `ra-qm-skills@claude-code-skills` | 12 regulatory/quality skills |
+| `pm-skills@claude-code-skills` | 6 project management skills |
+| `c-level-skills@claude-code-skills` | 28 C-level advisory skills |
+| `business-growth-skills@claude-code-skills` | 4 business & growth skills |
+| `finance-skills@claude-code-skills` | 2 finance skills |
+| `playwright-pro@claude-code-skills` | Playwright testing toolkit |
+| `self-improving-agent@claude-code-skills` | Auto-memory curation |
+| `skill-security-auditor@claude-code-skills` | Security scanner |
+| `content-creator@claude-code-skills` | SEO content creator |
 
 ---
 
