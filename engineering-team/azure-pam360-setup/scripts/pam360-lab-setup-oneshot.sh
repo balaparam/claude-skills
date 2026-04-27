@@ -7,7 +7,7 @@
 set -euo pipefail
 
 # ─── CHANGE ONLY THESE TWO LINES ────────────────────────────
-ADMIN_PASSWORD="YourStr0ng!Pass@2024"   # Must: 12+ chars, upper+lower+digit+special
+ADMIN_PASSWORD="ToCumu1u\$@123"          # Must: 12+ chars, upper+lower+digit+special
 LOCATION="eastus"                        # Azure region
 # ─────────────────────────────────────────────────────────────
 
