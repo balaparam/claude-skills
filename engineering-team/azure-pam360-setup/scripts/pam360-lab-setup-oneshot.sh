@@ -97,6 +97,7 @@ az network nic create --resource-group "$RG" --name "nic-pam360" \
   --location "$LOCATION" -o none
 
 az vm create --resource-group "$RG" --name "$PAM_VM" \
+  --computer-name "pam360srv" \
   --nics "nic-pam360" --image "$IMAGE" --size "Standard_D4s_v5" \
   --admin-username "$ADMIN_USER" --admin-password "$ADMIN_PASSWORD" \
   --os-disk-size-gb 128 --storage-sku Premium_LRS \
@@ -116,6 +117,7 @@ az network nic create --resource-group "$RG" --name "nic-endpoint-01" \
   --private-ip-address "10.10.2.10" --location "$LOCATION" -o none
 
 az vm create --resource-group "$RG" --name "$EP1_VM" \
+  --computer-name "winep01" \
   --nics "nic-endpoint-01" --image "$IMAGE" --size "Standard_D2s_v5" \
   --admin-username "$ADMIN_USER" --admin-password "$ADMIN_PASSWORD" \
   --os-disk-size-gb 64 --storage-sku StandardSSD_LRS \
@@ -135,6 +137,7 @@ az network nic create --resource-group "$RG" --name "nic-endpoint-02" \
   --private-ip-address "10.10.2.11" --location "$LOCATION" -o none
 
 az vm create --resource-group "$RG" --name "$EP2_VM" \
+  --computer-name "winep02" \
   --nics "nic-endpoint-02" --image "$IMAGE" --size "Standard_D2s_v5" \
   --admin-username "$ADMIN_USER" --admin-password "$ADMIN_PASSWORD" \
   --os-disk-size-gb 64 --storage-sku StandardSSD_LRS \
