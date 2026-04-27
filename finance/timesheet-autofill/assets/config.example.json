@@ -1,0 +1,8 @@
+{
+  "url": "https://toco.tocumulus.ai",
+  "email": "your.email@company.com",
+  "password": "your_password_here",
+  "project": "Internal",
+  "hours": 8.0,
+  "headless": true
+}
