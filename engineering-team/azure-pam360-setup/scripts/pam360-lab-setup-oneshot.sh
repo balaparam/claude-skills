@@ -120,7 +120,7 @@ az vm create --resource-group "$RG" --name "$EP1_VM" \
   --computer-name "winep01" \
   --nics "nic-endpoint-01" --image "$IMAGE" --size "Standard_D2s_v5" \
   --admin-username "$ADMIN_USER" --admin-password "$ADMIN_PASSWORD" \
-  --os-disk-size-gb 64 --storage-sku StandardSSD_LRS \
+  --os-disk-size-gb 128 --storage-sku StandardSSD_LRS \
   --boot-diagnostics-storage "$STORAGE" \
   --enable-agent true --location "$LOCATION" \
   --tags "role=pam360-endpoint" -o none
@@ -140,7 +140,7 @@ az vm create --resource-group "$RG" --name "$EP2_VM" \
   --computer-name "winep02" \
   --nics "nic-endpoint-02" --image "$IMAGE" --size "Standard_D2s_v5" \
   --admin-username "$ADMIN_USER" --admin-password "$ADMIN_PASSWORD" \
-  --os-disk-size-gb 64 --storage-sku StandardSSD_LRS \
+  --os-disk-size-gb 128 --storage-sku StandardSSD_LRS \
   --boot-diagnostics-storage "$STORAGE" \
   --enable-agent true --location "$LOCATION" \
   --tags "role=pam360-endpoint" -o none
